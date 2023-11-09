@@ -78,7 +78,7 @@ class KiddeClient:
                 return None
             return await response.json()
 
-    async def refresh(
+    async def get_data(
         self, get_devices: bool = True, get_events: bool = True
     ) -> "KiddeDataset":
         """Refresh the dataset.
