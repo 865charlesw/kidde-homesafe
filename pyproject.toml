@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name        = "kidde-homesafe"
+version     = "0.0.1"
+license     = {text = "	GPL-3.0-or-later"}
+description = "A slim python wrapper of the Kidde HomeSafe private API."
+readme      = "README.md"
+authors     = [{name = "Charles Weber", email = "865charlesw@gmail.com"}]
+requires-python = ">=3.11.0"
+dependencies    = ["aiohttp"]
+
+[project.urls]
+"Source Code" = "https://github.com/865charlesw/kidde-homesafe"
+
+[tool.setuptools]
+platforms = ["any"]
