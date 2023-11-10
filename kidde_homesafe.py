@@ -96,8 +96,8 @@ class KiddeClient:
         """
         location_list = await self._request("location")
         locations = _dict_by_ids(location_list)
-        devices = {}
-        events = {}
+        devices = {} if get_devices else None
+        events = {} if get_events else None
         for location_id in locations:
             if get_devices:
                 device_list = await self._request(f"location/{location_id}/device")
@@ -105,7 +105,7 @@ class KiddeClient:
             if get_events:
                 events_result = await self._request(f"location/{location_id}/event")
                 events.update(_dict_by_ids(events_result["events"]))
-        return KiddeDataset(locations, devices or None, events or None)
+        return KiddeDataset(locations, devices, events)
 
     async def device_command(
         self, location_id: int, device_id: int, command: KiddeCommand
