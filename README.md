@@ -1,5 +1,5 @@
 # kidde-homesafe
-A slim python wrapper of the Kidde HomeSafe private API. If you're new to python, poke around [the code][kidde_homesafe.py]; it's simple, and you may understand more than you expect.
+A slim python wrapper of the Kidde HomeSafe private API. If you're new to python, poke around [kidde_homesafe.py](kidde_homesafe.py); it's simple, and you may understand more than you expect.
 
 # Basic Usage
 ## Importing and asyncio
@@ -102,7 +102,7 @@ should print something like:
 ## Sending Device Commands
 You can send API commands to your device using the KiddeCommand enum:
 ```python
-await client.device_command(location_id=018271, device_id=918281, KiddeCommand.IDENTIFY)
+await client.device_command(location_id=018271, device_id=918281, command=KiddeCommand.IDENTIFY)
 ```
 IDENTIFY is labeled "ping" in the app.
 
