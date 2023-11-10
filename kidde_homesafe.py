@@ -28,6 +28,17 @@ class KiddeClientAuthError(Exception):
 
 @dataclass(frozen=True)
 class KiddeDataset:
+    """Dataset of locations, devices, and events to be returned from KiddeClient.get_data().
+
+    Attributes
+    ----------
+    locations : dict[int, dict[str, Any]]
+        Dicts of location data, keyed by id.
+    devices : Optional[dict[int, dict[str, Any]]]
+        Dicts of device data, keyed by id. None if not requested.
+    events : Optional[dict[int, dict[str, Any]]]
+        Dicts of event data, keyed by id. None if not requested.
+    """
 
     locations: dict[int, dict[str, Any]]
     devices: Optional[dict[int, dict[str, Any]]]
