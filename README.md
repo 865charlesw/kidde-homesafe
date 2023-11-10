@@ -1,5 +1,5 @@
 # kidde-homesafe
-A slim python wrapper of the Kidde HomeSafe private API. If you're new to python, poke around [the code][kidde_homesafe.py]; it's simple, and you may understand more than you expect.
+A slim python wrapper of the Kidde HomeSafe private API. If you're new to python, poke around [kidde_homesafe.py](kidde_homesafe.py); it's simple, and you may understand more than you expect.
 
 # Basic Usage
 ## Importing and asyncio
