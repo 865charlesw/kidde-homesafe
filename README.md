@@ -102,7 +102,7 @@ should print something like:
 ## Sending Device Commands
 You can send API commands to your device using the KiddeCommand enum:
 ```python
-await client.device_command(location_id=018271, device_id=918281, KiddeCommand.IDENTIFY)
+await client.device_command(location_id=018271, device_id=918281, command=KiddeCommand.IDENTIFY)
 ```
 IDENTIFY is labeled "ping" in the app.
 
