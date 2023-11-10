@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name        = "kidde-homesafe"
-version     = "0.0.2"
+version     = "0.0.3"
 license     = {text = "	GPL-3.0-or-later"}
 description = "A slim python wrapper of the Kidde HomeSafe private API."
 readme      = "README.md"
