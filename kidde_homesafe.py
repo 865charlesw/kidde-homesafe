@@ -28,11 +28,10 @@ class KiddeClientAuthError(Exception):
 
 @dataclass(frozen=True)
 class KiddeDataset:
-    """Dataset of locations, devices, and events."""
 
-    locations: dict[int, dict[str, dict]]
-    devices: Optional[dict[int, dict[str, dict]]]
-    events: Optional[dict[int, dict[str, dict]]]
+    locations: dict[int, dict[str, Any]]
+    devices: Optional[dict[int, dict[str, Any]]]
+    events: Optional[dict[int, dict[str, Any]]]
 
 
 class KiddeClient:
